@@ -4,17 +4,20 @@
 
 import sys
 
-DNA = str(sys.argv[1])
+try:
+	DNA = str(sys.argv[1])
+except ValueError:
+	print('DNA não é uma string')
 
 DNA1 = DNA.upper()
 
-n1 = int(sys.argv[2])
-
-n2 = int(sys.argv[3])
-
-n3 = int(sys.argv[4])
-
-n4 = int(sys.argv[5])
+try:
+	n1 = int(sys.argv[2])
+	n2 = int(sys.argv[3])
+	n3 = int(sys.argv[4])
+	n4 = int(sys.argv[5])
+except ValueError:
+	print('n1, n2, n3 e n4 devem ser valores inteiros')
 
 #conferir os valores da linha de comando
 
