@@ -43,6 +43,7 @@ else:
 
 CDS1 = DNA1[n1-1:n2-1]
 
+#conferir se termina com o códon de parada
 
 if(DNA1[n4-1:n4+2]) == "TAA":
 	print('termina com codon de parada')
@@ -55,4 +56,5 @@ else:
 
 CDS2 = DNA1[n3-1:n4-1]
 
+#junção do CDS1 e do CDS2 
 print(CDS1+CDS2)
